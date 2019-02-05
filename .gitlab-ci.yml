@@ -1,0 +1,26 @@
+stages : 
+  - staging
+  - production
+ 
+staging:
+  stage: staging
+  script:
+    - docker build -t web-gits-cms-indonesia .
+    - docker stop web-gits-cms-indonesia
+    - docker rm web-gits-cms-indonesia
+    - docker run -d --name web-gits-cms-indonesia -p 3004:80 web-gits-cms-indonesia
+  only:
+    - master
+  allow_failure: true
+  
+production:
+  stage: production
+  script:
+    - docker build -t web-gits-cms-indonesia .
+    - docker run -d -p 3004:80 web-gits-cms-indonesia
+  only:
+    - tags
+  tags:
+    - /^web-gits-cms-.*$/
+  allow_failure: true
+  when: manual
