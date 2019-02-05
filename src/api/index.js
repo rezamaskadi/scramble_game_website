@@ -11,7 +11,7 @@ const STORAGE_NAME = 'vuex'
 
 export let host = process.env.API_URL
 if (!process.env.API_URL) {
-  host = 'http://localhost:9021/v1/'
+  host = 'http://207.148.79.65:3007/v1/'
 }
 
 axios.defaults.baseURL = host
