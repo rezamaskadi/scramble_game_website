@@ -5,6 +5,13 @@
 npm install
 ```
 
+## Setup index API
+dont forget to setup Host API on /src/api/index.js
+default:
+```
+http://localhost:9021/v1/
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
