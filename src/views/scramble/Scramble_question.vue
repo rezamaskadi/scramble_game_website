@@ -103,7 +103,7 @@ export default {
 
           let scramble = res.data.data.scramble_word
           this.totalWord = scramble.length
-          this.scrambleWord = scramble.split('').sort(randomsort).join('')
+          this.scrambleWord = scramble.split('').sort(randomsort).join('  ')
         })
     },
     requestHelp() {

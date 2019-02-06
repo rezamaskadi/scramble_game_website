@@ -17,7 +17,7 @@
               </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn dark color="#4e277a" v-on:click="userRegister()">submit</v-btn>
+                <v-btn dark color="#4e277a" v-on:click="userRegister()">register</v-btn>
               </v-card-actions>
               <v-footer height="auto" color="#4e277a">
                 <v-layout justify-center row wrap>
@@ -34,8 +34,9 @@
                     4. Setiap jawaban benar akan mendapatkan score 100 point <br />
                     5. Total pertanyaan sebanyak 10 soal <br />
                     6. Score total akan diumumkan diakhir <br />
-                    7. Email bersifat unik, email yang sudah digunakan, tidak bisa digunakan kembali <br />
-                    8. Apabila score mencapai 0, maka permainan berakhir <br />
+                    7. Email yang sudah digunakan, tidak bisa digunakan kembali <br />
+                    8. bisa menggunakan akun dummy <br />
+                    9. Apabila score mencapai 0, maka permainan berakhir <br />
                     <br />
                     Selamat mencoba
                     <br />
